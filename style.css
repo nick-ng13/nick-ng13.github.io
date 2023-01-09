@@ -5,7 +5,7 @@ body, html {
     line-height: 1.8;
 }
 
-.bgimg-1 {
+.bgimg-1, .bgimg-2 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,6 +15,11 @@ body, html {
 .bgimg-1 {
     background-image: url('mountain.JPG');
     min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url('Wallpaper3.JPG');
+    min-height: 400px;
 }
 
 .w3-wide {letter-spacing: 10px;}
