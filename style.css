@@ -13,12 +13,12 @@ body, html {
 }
 
 .bgimg-1 {
-    background-image: url('./mountain.JPG');
+    background-image: url('./mountain.jpg');
     min-height: 100%;
 }
 
 .bgimg-2 {
-    background-image: url('./Wallpaper3.JPG');
+    background-image: url('./Wallpaper3.jpg');
     min-height: 400px;
 }
 
