@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Nicholas Ng</title>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="test.css">
+        <meta charset="UTF-8">
+        <title>Test Website</title>
     </head>
-
     <body>
-        <div class="w3-top" id="myNavbar">
-            <a href="#home" class="w3-button w3-bar-item w3-hover-text-white w3-hover-none">HOME</a>
-            <a href="#about" class="w3-button w3-bar-item w3-hover-text-white w3-hover-none">ABOUT</a>
-            <a href="#workExperience" class="w3-button w3-bar-item w3-hover-text-white w3-hover-none">WORK EXPERIENCE</a>
-            <a href="#technicalProjects" class="w3-button w3-bar-item w3-hover-text-white w3-hover-none">TECHNICAL PROJECTS</a>
-            <a href="#contact" class="w3-button w3-bar-item w3-hover-text-white w3-hover-none">CONTACT</a>
-        </div>
+        <header class="bgimg-1">
+            <div class="navbar">
+                <div class="logo"><a href="#">Test</a></div>
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work Experience</a></li>
+                    <li><a href="#">Technical Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <a href="#" class="action-btn">Get Started</a>
+                <div class="toggle-btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
 
-        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-            <div class="w3-display-middle">
-                <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity">
+            <div class="dropdown-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Work Experience</a></li>
+                <li><a href="#">Technical Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="action-btn">Get Started</a></li>
+            </div>
+        </header>
+
+        <main>
+            <section class="bgimg-1" id="hero">
+                <span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity">
                     NICHOLAS C. NG
                 </span>
-                <!-- <p class="w3-center w3-large">UBC Computer Engineering Student</p> -->
-                <br><br>
-                <div class="w3-center">
+                <br />
+                <div>
                     <a href="https://www.github.com/nick-ng13" class="social">
-                        <i class="fa fa-github"></i>
+                        <i class="fa-brands fa-github"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/nicholascng" class="social">
-                        <i class="fa fa-linkedin"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                     <a href="mailto: nicholascng13@gmail.com" class="social">
                         <i class="fa fa-envelope"></i>
@@ -37,76 +54,91 @@
                         <i class="fa fa-file"></i>
                     </a>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="w3-content w3-container w3-padding-64" id="about">
-            <h3 class="w3-center">ABOUT ME</h3>
-            <p class="w3-center">UBC Computer Engineering Graduate</p>
-            <div class="w3-row">
-                <div class="w3-col m6 w3-center w3-padding-large">
-                    <img src="./pfp.jpg" class="w3-round w3-image" width="275" height="275">
+            <section class="w3-content w3-container w3-padding-64" id="about">
+                <h3 class="w3-center">HEY, I AM NICHOLAS 👋</h3>
+                <div class="w3-row">
+                    <div class="w3-col m6 w3-padding-large">
+                        <br />
+                        <p>
+                            I graduated from the University of British Columbia in May 2023 where I studied Computer Engineering. Through my internships, 
+                            courses, and personal projects, I explored and dabbled in web3, machine learning, frontend, API, app, and database development.
+                        </p>
+                        <br />
+                        <p>
+                            When away from my work, you can find me swinging a club on the course ⛳, skating circles at the rink ⛸️, or in front of my computer 🖥️ 
+                            either learning about new technology 🌐 or kicking it back and playing some games 🎮.
+                        </p>
+                    </div>
+                    <div class="w3-col m6 w3-center w3-padding-large">
+                        <img src="./pfp.jpg" class="w3-round-large w3-image" width="275">
+                    </div>
                 </div>
-                <div class="w3-col m6 w3-padding-large">
-                    <p>
-                        I am a fourth year Computer Engineering Student at the University of British Columbia exploring new technological interests 
-                        while pursuing my passion in learning and using new technology in software. Through my past 4 years at UBC, I have completed 
-                        co-op work terms at:
-                        <ul>
-                            <li>Verathon Medical</li>
-                            <li>UBC Information Technology</li>
-                        </ul>
-                        These include roles software development and testing roles. As an incoming gradate of the class of May 2023, I am excited to 
-                        gain further experience with new technology alongside industry professionals.
-                    </p>
-                </div>
-            </div>
-        </div>
+                <p></p>
+            </section>
 
-        <div class="bgimg-2 w3-display-container w3-opacity-min" id="workExperience">
-            <div class="w3-display-middle">
-                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">
+            <section class="bgimg-2" id="work">
+                <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity">
                     WORK EXPERIENCE
                 </span>
-            </div>
-        </div>
+            </section>
 
-        <!-- <h1>NICHOLAS NG</h1> -->
-        <!-- <p>I am a fourth year Computer Engineering student at the University of British Columbia. </p> -->
-            <!-- Currently I am on a work term as a Test Engineering Coop at Verathon Medical <br>
-            where my duties involve doing Software Verification Testing on products.</p> -->
-        
-        <!-- <h2>Skills</h2> -->
-        <!-- <ul>
-            <li>Java</li>
-            <li>Verilog</li>
-            <li>C++</li>
-            <li>C</li>
-            <li>ARM Assembly</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Python</li>
-            <li>Json</li>
-            <li>Git</li>
-            <li>UIPath</li>
-        </ul> -->
+            <section class="w3-content w3-container w3-padding-64" id="ubc">
+                <h2 class="w3-center">University of British Columbia</h2>
+                <div class="w3-center">
+                    <img src="./ubc_logo.png" class="w3-image" width="90">
+                </div>
+                <p class="w3-center">May 2022 - August 2022</p>
+                <p class="w3-center">Information Technology</p>
+                <h3 class="w3-center">RPA Developer Co-op</h3>
+                <p>
+                    As a part of the Automation Solution Delivery (ASD) Team at UBC, I was in charge of designing, developing, testing, deploying, and 
+                    managing software robots used to emulate human interactions with computer systems and software. The ASD Team leverages Robotic 
+                    Process Automation (RPA) tools to tackle projects and the workflow of business processes.
+                </p>
+                <br />
+                <h3 class="w3-center">Responsibilities</h3>
+                <ul>
+                    <li>Design, develop, test, and deploy automation solutions for manual, runbook-based tasks using UiPath</li>
+                    <li>Document automation solution requirements, specifications, solutions, and risks on Confluence</li>
+                    <li>Communicate with the client to define process definition documents and resolve issues </li>
+                    <li>Utilize the Atlassian software suite to document solutions, track issues, and maintain software</li>
+                </ul>
+            </section>
+            <section class="w3-content w3-container w3-padding-64" id="verathon">
+                <h2 class="w3-center">Verathon Medical</h2>
+                <div class="w3-center">
+                    <img src="./verathon_logo.png" class="w3-image" width="70">
+                </div>
+                <p class="w3-center">January 2021 - August 2021</p>
+                <p class="w3-center">Research and Development</p>
+                <h3 class="w3-center">Test Engineering Co-op</h3>
+                <p>I was a part of the Product Compliance Team at Verathon.</p>
+                <br />
+                <h3 class="w3-center">Responsibilities</h3>
+                <ul>
+                    <li>Design, develop, test, and deploy automation solutions for manual, runbook-based tasks using UiPath</li>
+                    <li>Document automation solution requirements, specifications, solutions, and risks on Confluence</li>
+                    <li>Communicate with the client to define process definition documents and resolve issues </li>
+                    <li>Utilize the Atlassian software suite to document solutions, track issues, and maintain software</li>
+                </ul>
+            </section>
+        </main>
 
-        <!-- <h2>Work Experience</h2> -->
+        <script>
+            const toggleBtn = document.querySelector('.toggle-btn')
+            const toggleBtnIcon = document.querySelector('.toggle-btn i')
+            const dropdownMenu = document.querySelector('.dropdown-menu')
 
-        <!-- <h2>Technical Projects</h2> -->
-        <!-- <ul>
-            <li>Simple RISC Machine</li>
-            <li>Fin-der Android Application</li>
-            <li>Line Tracking Robot</li>
-        </ul> -->
+            toggleBtn.onclick = function () {
+                dropdownMenu.classList.toggle('open')
+                const isOpen = dropdownMenu.classList.contains('open')
 
-        <!-- <h2>Relavent Courses</h2> -->
-
-        <!-- <h2>Hobbies</h2> -->
-
-        <!-- <a href="mailto: nicholascng13@gmail.com">Email</a>
-        <a href="https://www.github.com/nick-ng13">GitHub</a>
-        <a href="https://www.linkedin.com/in/nicholascng/">Linkedin</a> -->
-
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa fa-xmark'
+                    : 'fa fa-bars'
+            }
+        </script>
     </body>
 </html>
