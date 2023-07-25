@@ -9,7 +9,7 @@
     height: 100vh;
 } */
 
-.bgimg-1, .bgimg-2 {
+.bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -228,6 +228,17 @@ section#verathon {
 }
 
 /* TECHNICAL PROJECTS */
+section#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgimg-3 {
+    background-image: url('./images/starfield.jpg');
+    min-height: 400px;
+}
 
 /* FOOTER */
 footer {
