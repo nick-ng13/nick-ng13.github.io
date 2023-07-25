@@ -119,6 +119,12 @@ header {
     justify-content: center;
 }
 
+.content {
+    margin: auto;
+    max-width: 980px;
+    padding: 64px 16px;
+}
+
 /* HERO */
 section#hero {
     height: calc(100vh - 60px);
@@ -154,7 +160,6 @@ section#hero {
 
 /* ABOUT */
 section#about {
-    height: calc();
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,7 +178,6 @@ section#about {
 
 /* WORK EXPERIENCE */
 section#work {
-    height: calc();
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,6 +187,13 @@ section#work {
 .bgimg-2 {
     background-image: url('./images/gamcheon.jpg');
     min-height: 400px;
+}
+
+section#ubc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #ubc p {
@@ -195,6 +206,13 @@ section#work {
     margin-left: 40px;
     font-size: 1.25rem;
     margin-bottom: 1rem;
+}
+
+section#verathon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #verathon p {
@@ -211,10 +229,22 @@ section#work {
 
 /* TECHNICAL PROJECTS */
 
+/* FOOTER */
+footer {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
-    .navbar .links,
-    .navbar .action-btn {
+    .navbar .links {
+    /* .navbar .action-btn { */
         display: none;
     }
 
