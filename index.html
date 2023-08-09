@@ -64,7 +64,7 @@
                         <br />
                         <p>
                             I graduated from the University of British Columbia in May 2023 where I studied Computer Engineering. Through my internships, 
-                            courses, and personal projects, I explored and dabbled in web3, machine learning, frontend, API, app, and database development.
+                            courses, and personal projects, I explored and dabbled in machine learning, frontend, API, app, and database development.
                         </p>
                         <br />
                         <p>
@@ -141,31 +141,103 @@
                 <h2>Capstone Project</h2>
                 <p>September 2022 - April 2023</p>
                 <h3>Data Visualization and Dashboard Development</h3>
+                <div class="w3-row-padding w3-center w3-section">
+                    <div class="w3-col m3">
+                        <img src="./images/cap_home.png" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Home Page">
+                    </div>
+                    <div class="w3-col m3">
+                        <img src="./images/cap_total.png" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Total Usage">
+                    </div>
+                    <div class="w3-col m3">
+                        <img src="./images/cap_peak.png" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Peak Usage">
+                    </div>
+                    <div class="w3-col m3">
+                        <img src="./images/cap_forecast.png" style="width: 100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Forecasting">
+                    </div>
+                </div>
+                <!-- <div class="w3-row-padding w3-center w3-section">
+                    <img src="./images/cap_home.png" width="70%" style="object-fit: cover;" onclick="onClick(this)" class="w3-hover-opacity" alt="home page">
+                </div>
+                <div class="w3-row-padding w3-center w3-section">
+                    <img src="./images/cap_forecast.png" width="70%" style="object-fit: cover;" onclick="onClick(this)" class="w3-hover-opacity" alt="forecast">
+                </div> -->
                 <p>
                     At UBC, every engineer is required to complete the capstone project course prior to graduating. My capstone group's project 
                     was to develop a new dashboard application from scratch to display visualizations of parking statistics for our client at 
                     UBC Parking.
                 </p>
+                <h3>Project Description</h3>
                 <ul>
                     <li>React front end web application displays visualizations of parking statistics</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Feature Manipulation Engine (FME) is used to filter and select features to store in Microsoft SQL database</li>
+                    <li>Queries back end Microsoft SQL database containing consolidated parking data</li>
+                    <li>Python FastAPI framework is used to make RESTful API requests to return information in JSON format</li>
+                    <li>Forecast near future parkade utilization using scikit-learn Python library</li>
                 </ul>
+                <div class="skills">
+                    <div class="skill">React</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">SQL</div>
+                    <div class="skill">FME</div>
+                    <div class="skill">JSON</div>
+                    <div>
+                        <a href="https://www.github.com/nick-ng13/Capstone-Project" class="social">
+                            <i class="fa-brands fa-square-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+                    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-xmark"></i></span>
+                    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                      <img id="img01" class="w3-image">
+                      <p id="caption" class="w3-opacity w3-large"></p>
+                    </div>
+                  </div>
             </section>
 
             <section class="content" id="quantum">
-                <h2>Capstone Project</h2>
-                <p>January 2023 - April 2023</p>
-                <h3>
+                <h2>
                     Classically Approximating Variational Quantum Machine Learning<br>
                     with Random Fourier Features
-                </h3>
+                </h2>
+                <p>January 2023 - April 2023</p>
+                <div class="w3-row-padding w3-center w3-section">
+                    <img src="./images/qc_slide.png" width="70%" style="object-fit: cover;" onclick="onClick(this)" class="w3-hover-opacity" alt="forecast">
+                </div>
+                <h3>Project Description</h3>
                 <p>
-                    At UBC, every engineer is required to complete the capstone project course prior to graduating. My capstone group's project 
-                    was to develop a new dashboard application from scratch to display visualizations of parking statistics for our client at 
-                    UBC Parking.
+                    For one of my advanced electives, I took a quantum computing course and for the course project, the task was to replicate
+                    a quantum computing research paper. My group used the PennyLane Python library to implement a classical approximation 
+                    method that could approximate the results of a quantum computer.
                 </p>
+                <div class="skills">
+                    <div class="skill">Python</div>
+                    <div>
+                        <a href="https://www.github.com/nick-ng13/CPEN-400Q-Project" class="social">
+                            <i class="fa-brands fa-square-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content" id="uss">
+                <h2>Ultimate Security System</h2>
+                <p>February 2022 - April 2022</p>
+                <h3>Project Description</h3>
+                <p>
+                    <!-- sdf -->
+                </p>
+                <div class="skills">
+                    <div class="skill">SystemVerilog</div>
+                    <div class="skill">C</div>
+                    <div class="skill">Lua</div>
+                    <div>
+                        <a href="https://www.github.com/nick-ng13" class="social">
+                            <i class="fa-brands fa-square-github"></i>
+                        </a>
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -204,6 +276,30 @@
                     ? 'fa fa-xmark'
                     : 'fa fa-bars'
             }
+
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+            // var modal = document.getElementById("myModal");
+            // var img = document.getElementById("myImg");
+            // var modalImg = document.getElementById("img01");
+            // var captionText = document.getElementById("caption");
+
+            // img.onclick = function () {
+            //     modal.style.display = "block";
+            //     modalImg.src = this.src;
+            //     captionText.innerHTML = this.alt;
+            // }
+
+            // var span = document.getElementsByClassName("close")[0];
+
+            // span.onclick = function () {
+            //     modal.style.display = "none";
+            // }
         </script>
     </body>
 </html>
