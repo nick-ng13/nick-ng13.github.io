@@ -119,6 +119,16 @@ header {
     justify-content: center;
 }
 
+.section-header {
+    color: white;
+    background-color: black;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 4px;
+    animation: opac 0.8s ease 0s 1 normal none;
+}
+
 .content {
     margin: auto;
     max-width: 980px;
@@ -130,6 +140,22 @@ header {
     margin-left: 40px;
     font-size: 1.25rem;
     margin-bottom: 1rem;
+}
+
+.image-content {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    padding: 0 8px;
+}
+
+.image-content:hover {
+    opacity: 0.6;
+}
+
+.video-content {
+    text-align:center;
+    padding: 0 8px;
 }
 
 /* HERO */
